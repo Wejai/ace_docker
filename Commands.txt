@@ -1,0 +1,45 @@
+docker pull ibmcom/ace
+
+docker run --name myAceNode -e LICENSE=accept -e NODENAME=MYACENODE -e SERVERNAME=MYACESERVER -P ibmcom/ace
+
+D:\ACE\ACE>docker build -t acewithbar .
+
+docker run --name myAceNode -e LICENSE=accept -e NODENAME=MYACENODE -e SERVERNAME=MYACESERVER -P acewithbar
+
+docker exec b7f65f3411b3 tail -f /var/log/syslog
+
+docker exec b7f65f3411b3 /bin/bash -c mqsilist
+
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' b7f65f3411b3
+
+docker inspect b7f65f3411b3
+
+http://192.168.99.100:32797/hello/v1
+http://192.168.99.100:32798
+
+minikube : 192.168.99.102
+
+
+srikanth.garapati-cognizant.com
+srikanth.garapati@cognizant.com
+Htnakirs@86
+
+http://bastion.116c.example.opentlc.com:32771/
+http://localhost:32771/
+
+srikanth.garapati-cognizant.com
+Htnakirs@86
+
+
+oc login https://api.starter-us-east-1.openshift.com --token=tUjDq62HjjkkmJ8JMw0tEiqUbdIERm-Fo4OeqMlUWpU
+oc login https://master.na39.openshift.opentlc.com --token=DgjjR4tl4DxFFlyPVf4juBEJG0yWnjTCO3445866wi4
+oc new-project ace --loglevel 5
+
+srikanth.garapati-cognizant.com
+Htnakirs@86
+
+
+https://master.na311.openshift.opentlc.com
+https://labs.opentlc.com/service/explorer
+bastion.na311.openshift.opentlc.com
+
